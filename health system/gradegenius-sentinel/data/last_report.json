@@ -1,0 +1,81 @@
+{
+    "app": "GradeGenius",
+    "time": "2026-11-19T23:26:27+02:00",
+    "host": "DESKTOP-RKJ41EQ",
+    "overall": "fail",
+    "checks": [
+        {
+            "status": "ok",
+            "message": "Resources are healthy",
+            "details": [],
+            "name": "System resources",
+            "ms": 1
+        },
+        {
+            "status": "fail",
+            "message": "7 configuration issue(s)",
+            "details": [
+                "display_errors is On - students could see internal errors",
+                "expose_php is On",
+                "session.cookie_httponly is Off",
+                "session.use_strict_mode is Off",
+                "Missing extension: mbstring",
+                "Missing extension: curl",
+                "Missing extension: openssl"
+            ],
+            "name": "PHP configuration",
+            "ms": 0
+        },
+        {
+            "status": "fail",
+            "message": "Cannot reach database",
+            "details": [
+                "SQLSTATE[HY000] [1524] Plugin 'mysql_native_password' is not loaded"
+            ],
+            "name": "Database",
+            "ms": 299
+        },
+        {
+            "status": "warn",
+            "message": "app_url not set or cURL missing",
+            "details": [],
+            "name": "Website & SSL",
+            "ms": 0
+        },
+        {
+            "status": "fail",
+            "message": "app_root does not exist: \/var\/www\/gradegenius",
+            "details": [],
+            "name": "File permissions",
+            "ms": 0
+        },
+        {
+            "status": "ok",
+            "message": "0 PHP files checked, no syntax errors",
+            "details": [],
+            "name": "PHP syntax (lint)",
+            "ms": 0
+        },
+        {
+            "status": "ok",
+            "message": "0 files scanned, nothing suspicious",
+            "details": [],
+            "name": "Suspicious code scan",
+            "ms": 0
+        },
+        {
+            "status": "warn",
+            "message": "No baseline yet - run \"php cli.php baseline\" after a trusted deploy",
+            "details": [],
+            "name": "File integrity",
+            "ms": 1
+        },
+        {
+            "status": "warn",
+            "message": "No readable log files - check log_files in config.php",
+            "details": [],
+            "name": "Error logs",
+            "ms": 0
+        }
+    ]
+}

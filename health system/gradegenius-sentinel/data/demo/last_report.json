@@ -1,0 +1,189 @@
+{
+    "app": "GradeGenius Demo",
+    "time": "2026-11-20T10:50:49+02:00",
+    "host": "DESKTOP-RKJ41EQ",
+    "os": "WINNT (AMD64)",
+    "overall": "fail",
+    "checks": [
+        {
+            "status": "ok",
+            "message": "All system metrics (Disk, RAM, CPU) within healthy limits",
+            "details": [
+                "Disk: 14.3% used (797.7 GB free of 930.9 GB)",
+                "RAM: 84.7% used (1236.7 MB free of 8077.2 MB)",
+                "CPU Usage: 49.0% across 1 core(s)"
+            ],
+            "remediation": null,
+            "name": "System Resources",
+            "category": "system",
+            "ms": 20628
+        },
+        {
+            "status": "warn",
+            "message": "Runtime configuration recommendations",
+            "details": [
+                "PHP Version: 8.4.27",
+                "expose_php reveals PHP version in HTTP headers"
+            ],
+            "remediation": null,
+            "name": "Runtime & Dependencies",
+            "category": "runtime",
+            "ms": 1
+        },
+        {
+            "status": "ok",
+            "message": "Databases and caches are connected and responsive",
+            "details": [],
+            "remediation": null,
+            "name": "Databases & Caches",
+            "category": "database",
+            "ms": 0
+        },
+        {
+            "status": "ok",
+            "message": "Network, web endpoints, and SSL are hardened",
+            "details": [],
+            "remediation": null,
+            "name": "Network & Web Security",
+            "category": "security",
+            "ms": 0
+        },
+        {
+            "status": "ok",
+            "message": "Source code syntax valid and secrets secured",
+            "details": [
+                "Syntax Lint: 4 PHP files verified syntax OK",
+                "Code Security: 5 files scanned, no critical patterns or leaked secrets detected"
+            ],
+            "remediation": null,
+            "name": "Code & Secret Security",
+            "category": "security",
+            "ms": 2788
+        },
+        {
+            "status": "ok",
+            "message": "Not a Git repository (or .git omitted in production)",
+            "details": [
+                "Git repository metadata not found in C:\\Users\\MR EEEM\\Desktop\\health system\\demo-app"
+            ],
+            "remediation": null,
+            "name": "Git & Version Control",
+            "category": "devops",
+            "ms": 1
+        },
+        {
+            "status": "ok",
+            "message": "Monitored services and containers are running smoothly",
+            "details": [
+                "No specific Docker, PM2, or systemd services configured for probing"
+            ],
+            "remediation": null,
+            "name": "Services & Containers",
+            "category": "devops",
+            "ms": 141
+        },
+        {
+            "status": "ok",
+            "message": "5 tracked file(s) strictly match trusted baseline",
+            "details": [
+                "All codebase hashes verified intact."
+            ],
+            "remediation": null,
+            "name": "File Integrity & Tampering",
+            "category": "security",
+            "ms": 13
+        },
+        {
+            "status": "ok",
+            "message": "Logs healthy (0 fatal errors in past 60m)",
+            "details": [
+                "Active logs analyzed (1): app.log",
+                "Past 60 min: 0 fatal error(s), 0 warning(s), 0 failed auth attempt(s)"
+            ],
+            "remediation": null,
+            "name": "Logs & Error Diagnostics",
+            "category": "logs",
+            "ms": 2
+        },
+        {
+            "status": "ok",
+            "message": "All 1 custom technician probe(s) passed",
+            "details": [
+                "[OK] sample-probe.php: Technician custom probe active: all microservices reachable."
+            ],
+            "remediation": null,
+            "name": "Custom Technician Probes",
+            "category": "devops",
+            "ms": 168
+        },
+        {
+            "status": "ok",
+            "message": "Learning service and reported components are active",
+            "details": [
+                "Health endpoint: HTTP 200",
+                "Reported learning state: active",
+                "Component learning_api: active",
+                "Component course_catalog: active",
+                "Health probe response time: 34 ms"
+            ],
+            "remediation": null,
+            "name": "Learning Service Health",
+            "category": "devops",
+            "ms": 46
+        },
+        {
+            "status": "fail",
+            "message": "3 sensitive service listener(s) bound to all interfaces",
+            "details": [
+                "28 TCP listener(s) found on this host.",
+                "Local TCP listeners only; no external hosts or networks were scanned.",
+                "Listeners are not necessarily internet-accessible; actual exposure also depends on routing, NAT, and firewall rules.",
+                "Windows Defender Firewall is enabled for all reported profiles.",
+                "HIGH RISK listener: 0.0.0.0:445 (SMB; all interfaces; PID 4; process System)",
+                "HIGH RISK listener: 0.0.0.0:3306 (MySQL; all interfaces; PID 8432; process mysqld.exe)",
+                "HIGH RISK listener: 0.0.0.0:33060 (MySQL X Protocol; all interfaces; PID 8432; process mysqld.exe)",
+                "Review sensitive listener: 10.0.11.249:139 (NetBIOS Session Service; specific interface; PID 4; process System)",
+                "Local listener: 0.0.0.0:80 (TCP service; all interfaces; PID 4028; process httpd.exe)",
+                "Verify intended exposure: 0.0.0.0:135 (TCP service; all interfaces; PID 736; process svchost.exe)",
+                "Local listener: 0.0.0.0:443 (TCP service; all interfaces; PID 4028; process httpd.exe)",
+                "Verify intended exposure: 0.0.0.0:5040 (TCP service; all interfaces; PID 7040; process svchost.exe)",
+                "Verify intended exposure: 0.0.0.0:7680 (TCP service; all interfaces; PID 6924; process svchost.exe)",
+                "Verify intended exposure: 0.0.0.0:8025 (TCP service; all interfaces; PID 9660; process mailpit.exe)",
+                "Verify intended exposure: 0.0.0.0:12345 (TCP service; all interfaces; PID 3756; process ElevationService.exe)",
+                "Verify intended exposure: 0.0.0.0:20271 (TCP service; all interfaces; PID 3996; process WsidService.exe)",
+                "Verify intended exposure: 0.0.0.0:49664 (TCP service; all interfaces; PID 820; process lsass.exe)",
+                "Verify intended exposure: 0.0.0.0:49665 (TCP service; all interfaces; PID 740; process wininit.exe)",
+                "Additional listeners omitted from this summary; review the local operating-system inventory."
+            ],
+            "remediation": "SMB on port 445: bind to loopback or a trusted private interface, require authentication, and restrict inbound firewall rules. | MySQL on port 3306: bind to loopback or a trusted private interface, require authentication, and restrict inbound firewall rules. | MySQL X Protocol on port 33060: bind to loopback or a trusted private interface, require authentication, and restrict inbound firewall rules. | NetBIOS Session Service on port 139: confirm the bound interface is private, require authentication, and restrict the allowed source range. | Identify listener PIDs locally (Windows: \"Get-Process -Id <PID>\"; Linux: \"ss -lntp\"), then restrict non-required binds and inbound firewall source ranges.",
+            "name": "Listening Ports & Exposure",
+            "category": "security",
+            "ms": 1966
+        },
+        {
+            "status": "ok",
+            "message": "No recent failed dashboard sign-ins",
+            "details": [
+                "Failed or rate-limited attempts in the last 60 minutes: 0",
+                "Unique source IPs with failed attempts: 0",
+                "Passwords are never stored; audit records contain time, source IP, event type, and a capped user-agent string.",
+                "Recent event: 2026-11-19 23:56:51 - login success from 127.0.0.1 (agent: Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/158.0.0.0 Safari\/537.36)"
+            ],
+            "remediation": null,
+            "name": "Dashboard Login Attempts",
+            "category": "security",
+            "ms": 0
+        },
+        {
+            "status": "ok",
+            "message": "Demo environment; production-only recommendations are not enforced",
+            "details": [
+                "Demo incident simulations are enabled without changing live services or audit records."
+            ],
+            "remediation": null,
+            "name": "Production Readiness",
+            "category": "security",
+            "ms": 0
+        }
+    ]
+}

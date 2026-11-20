@@ -1,0 +1,100 @@
+<?php
+declare(strict_types=1);
+
+return [
+    'student' => [
+        'name' => 'Jordan Taylor',
+        'first_name' => 'Jordan',
+        'initials' => 'JT',
+        'term' => 'Fall 2026',
+        'average' => '87%',
+        'lessons_completed' => 28,
+        'streak' => 6,
+    ],
+    'courses' => [
+        [
+            'code' => 'BIO 204',
+            'title' => 'Human Biology',
+            'instructor' => 'Dr. Maya Chen',
+            'progress' => 72,
+            'lessons_done' => 18,
+            'lessons_total' => 25,
+            'next_class' => 'Tue, 10:30 AM',
+            'color' => 'teal',
+            'grade' => 'A-',
+        ],
+        [
+            'code' => 'HIS 118',
+            'title' => 'World History',
+            'instructor' => 'Prof. Daniel Brooks',
+            'progress' => 48,
+            'lessons_done' => 12,
+            'lessons_total' => 25,
+            'next_class' => 'Wed, 1:00 PM',
+            'color' => 'orange',
+            'grade' => 'B+',
+        ],
+        [
+            'code' => 'MAT 231',
+            'title' => 'Applied Statistics',
+            'instructor' => 'Dr. Amara Okafor',
+            'progress' => 86,
+            'lessons_done' => 19,
+            'lessons_total' => 22,
+            'next_class' => 'Thu, 9:00 AM',
+            'color' => 'indigo',
+            'grade' => 'A',
+        ],
+        [
+            'code' => 'ENG 105',
+            'title' => 'Academic Writing',
+            'instructor' => 'Ms. Sofia Martinez',
+            'progress' => 35,
+            'lessons_done' => 7,
+            'lessons_total' => 20,
+            'next_class' => 'Fri, 11:15 AM',
+            'color' => 'rose',
+            'grade' => 'B',
+        ],
+    ],
+    'assignments' => [
+        [
+            'title' => 'Cell Structure Lab Report',
+            'course' => 'Human Biology',
+            'type' => 'Lab report',
+            'due' => 'Due tomorrow',
+        ],
+        [
+            'title' => 'Primary Source Analysis',
+            'course' => 'World History',
+            'type' => 'Written assignment',
+            'due' => 'Due Nov 23',
+        ],
+        [
+            'title' => 'Regression Problem Set',
+            'course' => 'Applied Statistics',
+            'type' => 'Problem set',
+            'due' => 'Due Nov 25',
+        ],
+    ],
+    'activity' => [
+        [
+            'icon' => '✓',
+            'title' => 'Quiz 4 graded',
+            'description' => 'Applied Statistics · Score 92%',
+            'when' => '2 hours ago',
+        ],
+        [
+            'icon' => '▤',
+            'title' => 'New reading added',
+            'description' => 'Human Biology · Unit 6',
+            'when' => 'Yesterday',
+        ],
+        [
+            'icon' => '◷',
+            'title' => 'Writing workshop',
+            'description' => 'Academic Writing · Room 204',
+            'when' => 'Fri, 11:15 AM',
+        ],
+    ],
+];
